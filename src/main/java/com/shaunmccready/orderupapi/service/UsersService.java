@@ -53,17 +53,17 @@ public class UsersService {
     }
 
     private Users replaceValuesWithNewOne(Users userInDb, Users replacementUser) {
-        if(replacementUser.getEmail() != null) {
+        if (replacementUser.getEmail() != null) {
             userInDb.setEmail(replacementUser.getEmail());
             userInDb.setEmailVerified(false);
         }
-        if(replacementUser.getName() != null) {
+        if (replacementUser.getName() != null) {
             userInDb.setName(replacementUser.getName());
         }
-        if(replacementUser.getGivenName() != null) {
+        if (replacementUser.getGivenName() != null) {
             userInDb.setGivenName(replacementUser.getGivenName());
         }
-        if(replacementUser.getFamilyName() != null) {
+        if (replacementUser.getFamilyName() != null) {
             userInDb.setFamilyName(replacementUser.getFamilyName());
         }
 

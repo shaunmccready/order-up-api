@@ -59,7 +59,7 @@ public class UsersController {
      */
     @PutMapping("/{id}")
     public Users updateUser(@PathVariable("id") String userId,
-                          @RequestBody Users user) {
+                            @RequestBody Users user) {
         return usersService.updateUser(userId, user);
     }
 

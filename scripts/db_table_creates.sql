@@ -11,7 +11,7 @@ CREATE TABLE public.users
 (
     id             text NOT NULL,
     email          text NOT NULL,
-    email_verified boolean,
+    email_verified boolean DEFAULT false,
     name           text NOT NULL,
     given_name     text,
     family_name    text,

@@ -3,7 +3,6 @@ package com.shaunmccready.orderupapi.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +17,6 @@ import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Set;
-
 
 
 @Entity
@@ -47,10 +45,8 @@ public class Users implements Serializable {
     @Size(min = 3, message = "must be at least 3 characters long")
     private String name;
 
-//    @JsonProperty("givenName")
     private String givenName;
 
-//    @JsonProperty("familyName")
     private String familyName;
 
     private String picture;
