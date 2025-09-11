@@ -15,7 +15,7 @@
     <description>Order-up API for placing food and drink orders at parties</description>
 
     <properties>
-        <apache.commons.lang3.version>3.9</apache.commons.lang3.version>
+        <apache.commons.lang3.version>3.18.0</apache.commons.lang3.version>
         <java.version>11</java.version>
         <lombok.version>1.18.12</lombok.version>
     </properties>
